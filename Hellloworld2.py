@@ -11,7 +11,6 @@ SHOW_FAKE_ECG= False
 #create time axis
 t= np.linspace(0,1,500)
 
-
 #create fake ECG-like signal
 signal= np.sin(2 * np.pi * 5 * t) + 0.1 * np.random.randn(500)
 
@@ -22,8 +21,6 @@ if SHOW_FAKE_ECG:
     plt.title("Fake ECG")
 
 plt.show()
-
-
 
 # -------- MULTICLASS ECG SIGNALS ---------
 def generate_ecg(freq, noise_level):
@@ -79,5 +76,4 @@ def classify(signal, threshold=0.25):
 
 print(classify(normal_ecg))
 print(classify(noisy_ecg))
-
 noice_score = np.std(np.diff(signal))
