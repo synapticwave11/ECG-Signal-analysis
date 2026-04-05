@@ -3,7 +3,6 @@ import numpy as np
 
 a= np.array([1,2,3])
 print(a*2)
-
 import numpy as np
 import matplotlib.pyplot as plt
 SHOW_FAKE_ECG= False
